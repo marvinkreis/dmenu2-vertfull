@@ -1,7 +1,7 @@
 pkgname=dmenu2-vertfull
 pkgver=0.2
 pkgrel=1
-pkgdesc="Fork of dmenu with many useful patches applied and additional options like screen select, dim or opacity change. Includes an additional patch to use the full with of the menu when using a prompt."
+pkgdesc="Fork of dmenu with many useful patches applied and additional options like screen select, dim or opacity change. Includes an additional patch to prevent dmenu from indenting items at the same level as the prompt length."
 url="https://bitbucket.org/melek/dmenu2"
 arch=('i686' 'x86_64')
 license=('MIT')
