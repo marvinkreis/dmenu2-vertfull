@@ -16,17 +16,17 @@ md5sums=('bc694c8b9fa3b8f6e7be8046d46e5bc5'
          'SKIP')
 
 prepare() {
-	cd "$srcdir/dmenu2-$pkgver"
+    cd "$srcdir/dmenu2-$pkgver"
     patch -p1 -i "$srcdir/dmenu2_vertfull/dmenu2-vertfull-$pkgver.diff"
 }
 
 build() {
-	cd "$srcdir/dmenu2-$pkgver"
-	make
+    cd "$srcdir/dmenu2-$pkgver"
+    make
 }
 
 package() {
-	cd "$srcdir/dmenu2-$pkgver"
-	make DESTDIR="$pkgdir" PREFIX=/usr install
-	install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    cd "$srcdir/dmenu2-$pkgver"
+    make DESTDIR="$pkgdir" PREFIX=/usr install
+    install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
